@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyStream - Découvrez Discovery de Daft Punk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-music"></i> MelodyStream</h1>
+            <p class="subtitle">Explorez l'album "Discovery" de Daft Punk</p>
+            <div class="album-stats">
+                <span><i class="fas fa-headphones"></i> 326 507 fans</span>
+                <span><i class="fas fa-clock"></i> 61:02 min</span>
+                <span><i class="fas fa-calendar"></i> 2001-03-07</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="album-section">
+                <div class="album-header">
+                    <img src="https://cdn-images.dzcdn.net/images/cover/5718f7c81c27e0b2417e2a4c45224f8a/500x500-000000-80-0-0.jpg" 
+                         alt="Discovery Album Cover" class="album-cover">
+                    <div class="album-info">
+                        <h2>Discovery</h2>
+                        <p class="artist-name">Daft Punk</p>
+                        <p class="album-details">
+                            <span class="label">Daft Life Ltd./ADA France</span>
+                            <span class="genre"><i class="fas fa-tag"></i> Danse</span>
+                        </p>
+                        <p class="upc">UPC: 724384960650</p>
+                        <div class="album-links">
+                            <a href="https://www.deezer.com/album/302127" target="_blank" class="deezer-link">
+                                <i class="fab fa-deezer"></i> Voir sur Deezer
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="search-section">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Rechercher dans l'album...">
+                    <button id="searchBtn"><i class="fas fa-search"></i> Rechercher</button>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <h2>Pistes de l'album <span id="resultCount">(14)</span></h2>
+                <div id="results" class="results-grid"></div>
+            </section>
+            <section class="player-section" id="playerSection" style="display: none;">
+                <div class="player-card">
+                    <div class="player-header">
+                        <img id="playerCover" src="" alt="Cover">
+                        <div class="player-info">
+                            <h3 id="playerTitle"></h3>
+                            <p id="playerArtist">Daft Punk</p>
+                            <p id="playerDuration"></p>
+                        </div>
+                    </div>
+                    <audio id="audioPlayer" controls></audio>
+                    <div class="player-controls">
+                        <button id="closePlayer"><i class="fas fa-times"></i> Fermer</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>© 2024 MelodyStream - Données fournies par Deezer API</p>
+            <p class="api-note">Album ID: 302127 | 14 titres | 326 507 fans</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
